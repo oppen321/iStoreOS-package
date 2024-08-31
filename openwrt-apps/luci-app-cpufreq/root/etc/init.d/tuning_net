@@ -1,0 +1,33 @@
+#!/bin/sh /etc/rc.common
+
+START=19
+
+hwacct_config() {
+	config_get wanacct_enabled $1 wan_acct "1"
+	config_get hwpppoe_enabled $1 hw_pppoe "0"
+}
+
+boot() {
+	local feature=`ethtool -k eth0 2>/dev/null | grep -F hw-pppoe: 2>/dev/null`
+	[[ -n "$feature" ]] || return 1
+
+	echo "$feature" | grep -qF '[fixed]' && return 1
+
+	local hwpppoe_enabled
+	local wanacct_enabled
+	local hwpppoe=off
+	local wanacct=on
+	config_load tuning_net
+	config_foreach hwacct_config hw_acct
+	[ "$wanacct_enabled" = 0 ] && wanacct=off
+	[ "$wanacct_enabled" = 1 -a "$hwpppoe_enabled" = 1 ] && hwpppoe=on
+
+	ethtool -K eth0 hw-pppoe $hwpppoe tx-checksum-ip-generic $wanacct tx-scatter-gather $wanacct generic-receive-offload $wanacct 2>/dev/null
+	ethtool -K eth1 hw-pppoe $hwpppoe 2>/dev/null
+
+	return 0
+}
+
+start() {
+	boot && /etc/init.d/network restart
+}

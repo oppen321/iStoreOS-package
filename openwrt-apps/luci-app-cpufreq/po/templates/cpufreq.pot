@@ -1,0 +1,170 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "Tuning"
+msgstr ""
+
+msgid "CPU Tuning"
+msgstr ""
+
+msgid "Manage CPU performance over LuCI."
+msgstr ""
+
+msgid "CPU frequence:"
+msgstr ""
+
+msgid "temperature:"
+msgstr ""
+
+msgid "CPUFreq governor"
+msgstr ""
+
+msgid "Default (Take effect after reboot)"
+msgstr ""
+
+msgid "conservative"
+msgstr ""
+
+msgid "userspace"
+msgstr ""
+
+msgid "powersave"
+msgstr ""
+
+msgid "ondemand"
+msgstr ""
+
+msgid "performance"
+msgstr ""
+
+msgid "interactive"
+msgstr ""
+
+msgid "schedutil"
+msgstr ""
+
+msgid "It is recommended to use 'ondemand' or 'schedutil'"
+msgstr ""
+
+msgid "Frequency"
+msgstr ""
+
+msgid "Pay attention to heat dissipation when choosing high frequency"
+msgstr ""
+
+msgid "Fan trigger temperature"
+msgstr ""
+
+msgid "Fan temperature hysteresis"
+msgstr ""
+
+msgid "Set a larger value to avoid frequent restart of the fan"
+msgstr ""
+
+msgid "IPK Mirror"
+msgstr ""
+
+msgid "Select IPK Mirror server"
+msgstr ""
+
+msgid "Mirror server"
+msgstr ""
+
+msgid "Tsinghua University"
+msgstr ""
+
+msgid "USTC"
+msgstr ""
+
+msgid "Alibaba Cloud"
+msgstr ""
+
+msgid "Tencent Cloud"
+msgstr ""
+
+msgid "Boot"
+msgstr ""
+
+msgid "Delay before mounting"
+msgstr ""
+
+msgid "Timeout (seconds)"
+msgstr ""
+
+msgid "Or until these device(s) ready (UUID):"
+msgstr ""
+
+msgid "Samba expert"
+msgstr ""
+
+msgid "Allow legacy protocols"
+msgstr ""
+
+msgid "Allow old client, don't use this option for secure environments!"
+msgstr ""
+
+msgid "Sandbox"
+msgstr ""
+
+msgid "Simple sandbox for OpenWRT"
+msgstr ""
+
+msgid "This action will reboot device"
+msgstr ""
+
+msgid "Commit"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "cpufreq/sb_info"
+msgstr ""
+
+msgid "cpufreq/sb_guide"
+msgstr ""
+
+msgid "Network"
+msgstr ""
+
+msgid "Hardware Acceleration"
+msgstr ""
+
+msgid "Enable PPPoE Acceleration"
+msgstr ""
+
+msgid "Improve PPPoE TX performace, only support built-in NICs"
+msgstr ""
+
+msgid "Exit Sandbox"
+msgstr ""
+
+msgid "Enable WAN Port Acceleration"
+msgstr ""
+
+msgid "Improve built-in WAN port (eth0) TX performace"
+msgstr ""
+
+msgid "Drivers"
+msgstr ""
+
+msgid "Drivers Settings"
+msgstr ""
+
+msgid "Realtek r8125 driver"
+msgstr ""
+
+msgid "Realtek r8168 driver"
+msgstr ""
+
+msgid "Backported Intel GPU driver (i915-oot)"
+msgstr ""
+
+msgid "Enable additional drivers"
+msgstr ""
+
+msgid "Configure device drivers, kernel modules, etc. Changes here will take effect on next boot"
+msgstr ""
+
+msgid "Please do not choose a driver you do not understand. Choosing the wrong driver may cause the system to fail to start"
+msgstr ""
